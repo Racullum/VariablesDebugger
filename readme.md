@@ -3,9 +3,9 @@ A plugin for Unreal Engine that lets you change `UPROPERTY` values on actors dur
 
 ![](ReadmeMedia/VariablesDebuggerMovementSpeed60frames.gif)
 The plugin was meant to be used in conjuction with BP and UMG. 
-    - **Live Variable Editing** – Change `UPROPERTY` values during PIE (Play In Editor) without restarting.
-    - **Flexible UI Setup** – Map `UPROPERTY`s to custom widgets using the plugin settings object.
-    - **Extensible** – Add your own custom widgets to handle property types however you see fit. Change module's container widget to a custom class.
+- **Live Variable Editing** – Change `UPROPERTY` values during PIE (Play In Editor) without restarting.
+- **Flexible UI Setup** – Map `UPROPERTY`s to custom widgets using the plugin settings object.
+- **Extensible** – Add your own custom widgets to handle property types however you see fit. Change module's container widget to a custom class.
     
 ## Usage 
 ### *Settings* ###
