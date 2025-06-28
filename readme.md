@@ -9,9 +9,9 @@ A plugin for Unreal Engine that lets you change `UPROPERTY` values on actors dur
 ## Usage ##
 ![
 ](VariablesDebuggerSettingsUpdate-0.png)
-* Add classes to the plugin's "Allowed Class Mappings". Gives the plugin access to a list of UPROPERTYs.
-* Add a property to widget map entry. The data controller uses this array of mappings during widget creation.
-* Add the widget which will spawn inside our plugins tab window.
+* "Allowed Class Mappings": Array of classes that gives the plugin access to a list of UPROPERTYs.
+* "Property to Widget Map": Add an entry here to select what widget the plugin should spawn for a given actor's UPROPERTY.
+* "Module Window Widget": Add the widget which will spawn inside our plugins tab window. This widget is the owner of all the property widgets that are spawned for a selected actor.
 ## Getting Started
 
 1. Clone this repo or download it as a ZIP.
