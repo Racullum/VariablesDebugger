@@ -1,30 +1,23 @@
 # VariablesDebugger
+A plugin for Unreal Engine that lets you change `UPROPERTY` values on actors during runtime. It was created to help my development of another project and gain experience in tool development using Unreal C++.
 
-**VariablesDebugger** is a plugin for Unreal Engine that lets you inspect and tweak `UPROPERTY` values on actors in real time. It was created to solve a workflow problem and to gain experience with Unreal tools development.
-
-
-## Features
-
-- 🔧 **Live Variable Editing** – Change `UPROPERTY` values during PIE (Play In Editor) without restarting.
-- 🧩 **Flexible UI Setup** – Map `UPROPERTY`s on a class to custom widgets using a simple settings object.
-- 💡 **Extensible** – Add your own custom widgets to handle property types however you see fit.
-
-## How It Works
-
-You define which widget should be used for each property by setting up mappings in the plugin settings. This gives you full control over the UI and lets you tailor it to your project's needs.
-
-**Under the Hood:**
-
-- A collection of functions, simple UI widgets, and a central data controller.
-- Functions query property information from an actor or class.
-- The central data controller processes value changes from widgets and propagates them to the correct actor(s).
-
+![
+](VariablesDebuggerMovementSpeed60frames.gif)
+  - **Live Variable Editing** – Change `UPROPERTY` values during PIE (Play In Editor) without restarting.
+  - **Flexible UI Setup** – Map `UPROPERTY`s to custom widgets using the plugin settings object.
+  - **Extensible** – Add your own custom widgets to handle property types however you see fit. Change module's container widget to a custom class.
+## Usage ##
+![
+](VariablesDebuggerSettingsUpdate-0.png)
+* Add classes to the plugin's "Allowed Class Mappings". Gives the plugin access to a list of UPROPERTYs.
+* Add a property to widget map entry. The data controller uses this array of mappings during widget creation.
+* Add the widget which will spawn inside our plugins tab window.
 ## Getting Started
 
 1. Clone this repo or download it as a ZIP.
 2. Place it in your project’s `Plugins` folder.
 3. Enable the plugin in your project settings.
-4. Start PIE and open the Variables Debugger window.
+4. Start PIE and open the Variables Debugger window under **Tools** -> **Debug** -> **Variables Debugger**.
 5. Select an actor to see and edit the properties you've configured.
 
 ## Extending It
@@ -37,4 +30,9 @@ This is a personal tool, but if it’s useful to you and you have suggestions or
 
 ## License
 
-MIT – free to use and modify.
+MIT – free to use and modify./YourProject/Plugins/VariablesDebugger/
+Regenerate project files.
+
+
+
+[definition]: diagram.png
