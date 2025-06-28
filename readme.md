@@ -45,7 +45,7 @@ To support custom types or override default widgets, register your own widgets i
 
 ## Contributing
 
-I wrote this primiarly as a way to learn tools development in Unreal C++. However, if you have improvements feel free to open up an issue/pr! Would love to know where I can improve. 
+I wrote this primiarly as a way to learn tools development in Unreal C++. However, if you have improvements feel free to open up an issue/pr! Would love to know where I can improve 
 :)
 
 
